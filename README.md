@@ -4,14 +4,24 @@ This is exercise in Typescript(compiled to Javascript). This project will demons
 
 This is Free for re-use or practise.
 
-Requirements Node v6 or higher
-I have tested on Node v9
+[BACKGROUND]
+In this assignment I will simulate a robot moving on a square table. The table is 5
+units x 5 units in size. There are no obstructions on the table surface. The robot is free
+to roam around the surface of the table, but must be prevented from falling.
+
+Requirements Node v6 or higher I have tested on Node v9
 
 Now install packages & dependencies:
 ```shell
 npm install
 npm run build
 npm run start
+```
+[TESTS]
+
+using mocha
+```shell
+npm test
 ```
 
 [EXAMPLE]
@@ -20,28 +30,17 @@ npm run start
 
 ```shell
 npm run start
-PLACE 
-REPORT
-PLACE
-REPORT
-LEFT
-MOVE
-REPORT
+PLACE 2,2,WEST,
+ REPORT,
+  LEFT,
+   MOVE 
 ```
 
 Example: 
-> PLACE 0,0,SOUTH
-> REPORT
-OUTPUT
-> REPORT:: 0, 2, SOUTH
 
-[COMMANDS]
-
-PLACE
-MOVE
-LEFT
-RIGHT
-REPORT
+![Alt text](extra/screen_case1.png "MOVE")
+![Alt text](extra/screen_case2.png "PROTECT FROM FALLING")
+![Alt text](extra/screen_case3.png "CHANGE DIRECTION in 90 DEGREE")
 
 [SPECIFICATIONS]
 
