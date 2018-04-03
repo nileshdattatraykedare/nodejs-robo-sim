@@ -8,12 +8,26 @@ Requirements Node v6 or higher
 I have tested on Node v9
 
 Now install packages & dependencies:
-
+```shell
 npm install
 npm run build
-npm run start or node dist/Game.js
+npm run start
+```
 
-![Alt text](command-line-screen.png "Command Line Screenshot")
+[EXAMPLE]
+
+[i]intialize by typing PLACE in console[i]
+
+```shell
+npm run start
+PLACE 
+REPORT
+PLACE
+REPORT
+LEFT
+MOVE
+REPORT
+```
 
 Example: 
 > PLACE 0,0,SOUTH
@@ -23,7 +37,7 @@ OUTPUT
 
 [COMMANDS]
 
-PLACE X,Y,F
+PLACE
 MOVE
 LEFT
 RIGHT
