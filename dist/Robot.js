@@ -31,7 +31,7 @@ var Robot = /** @class */ (function () {
     Robot.prototype.move = function () {
         switch (this.direction) {
             case 0 /* NORTH */:
-                if (this.position.y == 4) {
+                if (this.position.y === 4) {
                     return false;
                 }
                 else {
@@ -39,7 +39,7 @@ var Robot = /** @class */ (function () {
                 }
                 break;
             case 1 /* EAST */:
-                if (this.position.y == 4) {
+                if (this.position.x === 4) {
                     return false;
                 }
                 else {
@@ -47,7 +47,7 @@ var Robot = /** @class */ (function () {
                 }
                 break;
             case 2 /* SOUTH */:
-                if (this.position.y == -4) {
+                if (this.position.y === -4) {
                     return false;
                 }
                 else {
@@ -55,7 +55,7 @@ var Robot = /** @class */ (function () {
                 }
                 break;
             case 3 /* WEST */:
-                if (this.position.y == -4) {
+                if (this.position.x === -4) {
                     return false;
                 }
                 else {

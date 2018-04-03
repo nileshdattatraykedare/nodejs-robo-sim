@@ -39,6 +39,9 @@ using mocha
 ```shell
 npm test
 ```
+RESULTS:
+
+![Alt text](extra/unit-tests.png "MOVE")
 
 [EXAMPLE]
 
