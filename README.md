@@ -14,6 +14,21 @@ npm run build
 npm run start
 ```
 
+[EXAMPLE]
+
+[i]intialize by typing PLACE in console[i]
+
+```shell
+npm run start
+PLACE 
+REPORT
+PLACE 0,0
+REPORT
+LEFT
+MOVE
+REPORT
+```
+
 ![Alt text](command-line-screen.png "Command Line Screenshot")
 
 Example: 
