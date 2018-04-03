@@ -37,22 +37,22 @@ export class Robot {
   public move(): boolean {
     switch (this.direction) {
       case Directions.NORTH:
-        if (this.position.y == 4) {
+        if (this.position.y === 4) {
           return false;
         } else { ++this.position.y; }
         break;
       case Directions.EAST:
-      if (this.position.y == 4) {
+      if (this.position.x === 4) {
         return false;
       } else { ++this.position.x; }
         break;
       case Directions.SOUTH:
-      if (this.position.y == -4) {
+      if (this.position.y === -4) {
         return false;
       } else { --this.position.y; }
         break;
       case Directions.WEST:
-      if (this.position.y == -4) {
+      if (this.position.x === -4) {
         return false;
       } else { --this.position.x; }
         break;
