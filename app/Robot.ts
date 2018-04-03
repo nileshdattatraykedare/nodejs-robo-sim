@@ -7,7 +7,7 @@ import {IRobotOptions} from './Direction';
  * @export
  * @class Robot
  */
-export class Robot {
+export default class Robot {
 
   public name: string;
   public direction: Directions;

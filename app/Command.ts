@@ -1,5 +1,5 @@
 import * as process from 'process';
-import { Robot } from './Robot';
+import Robot from './Robot';
 import { Directions } from './Direction';
 import Table from './Table';
 
@@ -13,8 +13,7 @@ export default class Command {
   }
 
   public execute(command: string): void {
-
-    if (this.robot) {
+   if (this.robot) {
       switch (command) {
         case 'LEFT':
           this.robot.turnLeft();

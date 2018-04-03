@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import * as process from 'process';
+const process = require('process');
 import { createInterface, ReadLineOptions } from 'readline';
 import Commands from './Command';
 import TableSurface from './Table';
 const table = new TableSurface();
-const controller = new Commands(table);
+const command = new Commands(table);
 
 const crlOptions: ReadLineOptions = {
   input: process.stdin,
@@ -19,6 +19,6 @@ const crl = createInterface(crlOptions);
 crl.prompt(true);
 
 crl.on('line', (line: string) => {
-  controller.execute(line);
+  command.execute(line);
   crl.prompt(true);
 });
