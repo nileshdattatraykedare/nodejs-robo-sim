@@ -22,14 +22,12 @@ npm run start
 npm run start
 PLACE 
 REPORT
-PLACE 0,0
+PLACE
 REPORT
 LEFT
 MOVE
 REPORT
 ```
-
-![Alt text](command-line-screen.png "Command Line Screenshot")
 
 Example: 
 Initialize APP by running just 
@@ -41,7 +39,7 @@ This exercise uses some best practise in NodeJs enviroment
 
 [COMMANDS]
 
-PLACE X,Y,F
+PLACE
 MOVE
 LEFT
 RIGHT
