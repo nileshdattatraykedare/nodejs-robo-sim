@@ -2,11 +2,11 @@
 import * as process from 'process';
 import { createInterface, ReadLineOptions } from 'readline';
 import Controller from './Command';
-import TableTop from './Table';
-const table = new TableTop();
+import TableSurface from './Table';
+const table = new TableSurface();
 const controller = new Controller(table);
 
-const rlOptions: ReadLineOptions = {
+const crlOptions: ReadLineOptions = {
   input: process.stdin,
   output: process.stdout,
   terminal: false,
@@ -14,11 +14,11 @@ const rlOptions: ReadLineOptions = {
 
 process.stdout.write('Valid commands: PLACE, LEFT, RIGHT, MOVE, REPORT.\n');
 
-const rl = createInterface(rlOptions);
+const crl = createInterface(crlOptions);
 
-rl.prompt(true);
+crl.prompt(true);
 
-rl.on('line', (line: string) => {
+crl.on('line', (line: string) => {
   controller.execute(line);
-  rl.prompt(true);
+  crl.prompt(true);
 });
