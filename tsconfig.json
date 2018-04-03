@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "outDir": "./lib",
-    "baseUrl": "./src/",
-    "lib": ["dom", "es2015.promise", "es5"],
-    "sourceMap": true,
+    "baseUrl": "./app/",
+    "noLib": false,
     "noImplicitAny": true,
     "module": "commonjs",
-    "target": "ES5",
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "./dist",
     "moduleResolution": "node",
     "typeRoots": [
       "node_modules/@types",

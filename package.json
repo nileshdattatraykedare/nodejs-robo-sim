@@ -7,7 +7,7 @@
     "start": "node index.js",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
-    "start:prod": "node dist/main.js"
+    "start:prod": "node dist/Game.js"
   },
   "repository": {
     "type": "git",
