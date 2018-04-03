@@ -45,8 +45,6 @@ RESULTS:
 
 [EXAMPLE]
 
-[i]intialize by typing PLACE in console[i]
-
 ```shell
 npm run start
 PLACE 2,2,WEST,
