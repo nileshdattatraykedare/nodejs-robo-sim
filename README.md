@@ -1,8 +1,6 @@
 # nodejs-robo-sim
 
-This is exercise in Typescript(compiled to Javascript). This project will demonstrate robot simulator using predefined commands. 
-
-This is Free for re-use or practise.
+Stack: NodeJS - Typescript/Javascipt. This project will demonstrate robot simulator using predefined commands. 
 
 [BACKGROUND]
 
