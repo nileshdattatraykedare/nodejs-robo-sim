@@ -7,7 +7,7 @@ import {IRobotOptions} from './Direction';
  * @export
  * @class Robot
  */
-export default class Robot {
+export class Robot {
 
   public name: string;
   public direction: Directions;
@@ -37,16 +37,24 @@ export default class Robot {
   public move(): boolean {
     switch (this.direction) {
       case Directions.NORTH:
-        --this.position.y;
+        if (this.position.y == 4) {
+          return false;
+        } else { ++this.position.y; }
         break;
       case Directions.EAST:
-        ++this.position.x;
+      if (this.position.y == 4) {
+        return false;
+      } else { ++this.position.x; }
         break;
       case Directions.SOUTH:
-        ++this.position.y;
+      if (this.position.y == -4) {
+        return false;
+      } else { --this.position.y; }
         break;
       case Directions.WEST:
-        --this.position.x;
+      if (this.position.y == -4) {
+        return false;
+      } else { --this.position.x; }
         break;
       default:
     }
@@ -57,6 +65,19 @@ export default class Robot {
    * @param  {} ${this.position.y}
    */
   public toString() {
-    return `${this.position.x}, ${this.position.y}, ${this.direction}`;
+    return `${this.position.x}, ${this.position.y}, ${this.getDirectionName(this.direction)}`;
+  }
+  getDirectionName(x: number){
+    if(x === 0){
+      return 'NORTH';
+    }else if(x === 1){
+      return 'EAST';
+    }
+    else if(x === 2){
+      return 'SOUTH';
+    }
+    else if(x === 3){
+      return 'WEST';
+    }
   }
 }

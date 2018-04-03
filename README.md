@@ -1,6 +1,6 @@
 # nodejs-robo-sim
 
-This is exercise in Typescript. This project will demonstrate robot simulator using predefined commands. 
+This is exercise in Typescript(compiled to Javascript). This project will demonstrate robot simulator using predefined commands. 
 
 This is Free for re-use or practise.
 
@@ -16,12 +16,10 @@ npm run start or node dist/Game.js
 ![Alt text](command-line-screen.png "Command Line Screenshot")
 
 Example: 
-Initialize APP by running just 
-PLACE
-
-
-This exercise uses some best practise in NodeJs enviroment
-
+> PLACE 0,0,SOUTH
+> REPORT
+OUTPUT
+> REPORT:: 0, 2, SOUTH
 
 [COMMANDS]
 

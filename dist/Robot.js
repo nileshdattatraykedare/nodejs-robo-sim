@@ -31,16 +31,36 @@ var Robot = /** @class */ (function () {
     Robot.prototype.move = function () {
         switch (this.direction) {
             case 0 /* NORTH */:
-                --this.position.y;
+                if (this.position.y == 4) {
+                    return false;
+                }
+                else {
+                    ++this.position.y;
+                }
                 break;
             case 1 /* EAST */:
-                ++this.position.x;
+                if (this.position.y == 4) {
+                    return false;
+                }
+                else {
+                    ++this.position.x;
+                }
                 break;
             case 2 /* SOUTH */:
-                ++this.position.y;
+                if (this.position.y == -4) {
+                    return false;
+                }
+                else {
+                    --this.position.y;
+                }
                 break;
             case 3 /* WEST */:
-                --this.position.x;
+                if (this.position.y == -4) {
+                    return false;
+                }
+                else {
+                    --this.position.x;
+                }
                 break;
             default:
         }
@@ -51,9 +71,23 @@ var Robot = /** @class */ (function () {
      * @param  {} ${this.position.y}
      */
     Robot.prototype.toString = function () {
-        return this.position.x + ", " + this.position.y + ", " + this.direction;
+        return this.position.x + ", " + this.position.y + ", " + this.getDirectionName(this.direction);
+    };
+    Robot.prototype.getDirectionName = function (x) {
+        if (x === 0) {
+            return 'NORTH';
+        }
+        else if (x === 1) {
+            return 'EAST';
+        }
+        else if (x === 2) {
+            return 'SOUTH';
+        }
+        else if (x === 3) {
+            return 'WEST';
+        }
     };
     return Robot;
 }());
-exports.default = Robot;
+exports.Robot = Robot;
 //# sourceMappingURL=Robot.js.map
