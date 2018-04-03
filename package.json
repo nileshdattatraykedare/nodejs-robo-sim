@@ -1,10 +1,13 @@
 {
   "name": "robo-simulator",
   "version": "1.0.0",
-  "description": "this is a exercise",
+  "description": "This is a TypeScript exercise to build a good design and architecture for command line robot simulator app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:watch": "nodemon",
+    "prestart:prod": "tsc",
+    "start:prod": "node dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +30,25 @@
     "lodash": "^4.17.5",
     "process": "^0.11.10",
     "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/chai": "latest",
+    "@types/lodash": "latest",
+    "@types/mocha": "latest",
+    "@types/node": "latest",
+    "@types/sinon": "latest",
+    "@types/sinon-chai": "latest",
+    "chai": "latest",
+    "coveralls": "latest",
+    "mocha": "latest",
+    "nodemon": "^1.17.3",
+    "nyc": "latest",
+    "rimraf": "latest",
+    "sinon": "latest",
+    "sinon-chai": "latest",
+    "stdio-mock": "latest",
+    "ts-node": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
   }
 }
