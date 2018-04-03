@@ -1,6 +1,22 @@
 # nodejs-robo-sim
+
 This is exercise in Typescript. This project will demonstrate robot simulator using predefined commands. 
 This is Free for re-use.
+
+Requirements Node v6 or higher
+I have tested on Node v9
+
+Now install packages & dependencies:
+
+npm install
+npm run build
+npm run start or node dist/Game.js
+
+![Alt text](command-line-screen.png "Command Line Screenshot")
+
+Example: 
+Initialize APP by running just 
+PLACE
 
 
 This exercise uses some best practise in NodeJs enviroment

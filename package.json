@@ -4,6 +4,7 @@
   "description": "This is a TypeScript exercise to build a good design and architecture for command line robot simulator app",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "node index.js",
     "start:watch": "nodemon",
     "prestart:prod": "tsc",
