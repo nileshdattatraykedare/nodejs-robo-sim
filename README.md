@@ -8,10 +8,11 @@ Requirements Node v6 or higher
 I have tested on Node v9
 
 Now install packages & dependencies:
-
+```shell
 npm install
 npm run build
-npm run start or node dist/Game.js
+npm run start
+```
 
 ![Alt text](command-line-screen.png "Command Line Screenshot")
 
