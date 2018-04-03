@@ -1,7 +1,8 @@
 # nodejs-robo-sim
 
 This is exercise in Typescript. This project will demonstrate robot simulator using predefined commands. 
-This is Free for re-use.
+
+This is Free for re-use or practise.
 
 Requirements Node v6 or higher
 I have tested on Node v9
@@ -20,11 +21,17 @@ PLACE
 
 
 This exercise uses some best practise in NodeJs enviroment
+
+
+[COMMANDS]
+
 PLACE X,Y,F
 MOVE
 LEFT
 RIGHT
 REPORT
+
+[SPECIFICATIONS]
 
 PLACE will put the robot on the table in position X,Y and facing NORTH, SOUTH, EAST
 or WEST. The origin (0,0) can be considered to be the SOUTH WEST most corner.
