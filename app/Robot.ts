@@ -22,24 +22,29 @@ export class Robot {
    */
   public turnLeft(): Directions {
     const newDirection: Directions = this.direction === Directions.NORTH ? Directions.WEST : this.direction - 1;
-    if(this.direction === Directions.WEST){
-      this.position.x = -this.position.x;
-    }
-    if(this.direction === Directions.SOUTH){
-      this.position.x = -this.position.x;
-      this.position.y = -this.position.y;
-    }
-    if(this.direction === Directions.EAST){
-      this.position.y = -this.position.y;
-    }
+    this.updatePositions();
     
     return this.direction = newDirection;
   }
+  private updatePositions() {
+    if (this.direction === Directions.WEST) {
+      this.position.x = -this.position.x;
+    }
+    if (this.direction === Directions.SOUTH) {
+      this.position.x = -this.position.x;
+      this.position.y = -this.position.y;
+    }
+    if (this.direction === Directions.EAST) {
+      this.position.y = -this.position.y;
+    }
+  }
+
   /**
    * @returns this
    */
   public turnRight(): Directions {
     const newDirection: Directions = this.direction === Directions.WEST ? Directions.NORTH : this.direction + 1;
+    this.updatePositions();
     return this.direction = newDirection;
   }
   /**
