@@ -26,6 +26,17 @@ to roam around the surface of the table, but must be prevented from falling.
 
 Requirements:
  Node v6 or higher I have tested on Node v9
+ 
+ [AWS LAMBDA CLOUD DEPLOYMENT using Node ServerLess module]
+ 
+ # 1. Create a new Serverless project:
+$ serverless create --template aws-nodejs --path robo-sim-cloud
+# 2. Change into the newly created directory and copy or clone robo-sim project
+$ cd robo-sim-cloud && git clone https://github.com/nileshdattatraykedare/nodejs-robo-sim
+# 3. Install npm dependencies
+$ npm install
+# 4. Deploy
+$ serverless deploy
 
 Now install packages & dependencies:
 ```shell
