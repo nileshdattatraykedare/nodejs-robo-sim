@@ -22,6 +22,17 @@ export class Robot {
    */
   public turnLeft(): Directions {
     const newDirection: Directions = this.direction === Directions.NORTH ? Directions.WEST : this.direction - 1;
+    if(this.direction === Directions.WEST){
+      this.position.x = -this.position.x;
+    }
+    if(this.direction === Directions.SOUTH){
+      this.position.x = -this.position.x;
+      this.position.y = -this.position.y;
+    }
+    if(this.direction === Directions.EAST){
+      this.position.y = -this.position.y;
+    }
+    
     return this.direction = newDirection;
   }
   /**

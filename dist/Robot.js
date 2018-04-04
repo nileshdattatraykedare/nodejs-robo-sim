@@ -16,6 +16,16 @@ var Robot = /** @class */ (function () {
      */
     Robot.prototype.turnLeft = function () {
         var newDirection = this.direction === 0 /* NORTH */ ? 3 /* WEST */ : this.direction - 1;
+        if (this.direction === 3 /* WEST */) {
+            this.position.x = -this.position.x;
+        }
+        if (this.direction === 2 /* SOUTH */) {
+            this.position.x = -this.position.x;
+            this.position.y = -this.position.y;
+        }
+        if (this.direction === 1 /* EAST */) {
+            this.position.y = -this.position.y;
+        }
         return this.direction = newDirection;
     };
     /**
