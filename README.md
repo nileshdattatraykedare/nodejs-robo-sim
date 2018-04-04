@@ -64,7 +64,7 @@ Shows Robot cannot move further than table surface
 
 Shows How robot changes direction
 
-![Alt text](extra/screen_case3.png "CHANGE DIRECTION in 90 DEGREE")
+![Alt text](extra/screen_directions_updated.png "CHANGE DIRECTION in 90 DEGREE")
 
 [AWS LAMBDA CLOUD DEPLOYMENT using Node ServerLess module]
  ```shell
