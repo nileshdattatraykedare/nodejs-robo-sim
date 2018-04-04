@@ -58,10 +58,6 @@ Shows how robot moves
 
 ![Alt text](extra/screen_case1.png "MOVE")
 
-Shows Robot cannot move further than table surface
-
-![Alt text](extra/screen_case2.png "PROTECT FROM FALLING")
-
 Shows How robot changes direction
 
 ![Alt text](extra/screen_directions_updated.png "CHANGE DIRECTION in 90 DEGREE")
