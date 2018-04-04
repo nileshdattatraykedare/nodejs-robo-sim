@@ -83,16 +83,16 @@ export class Robot {
   public toString() {
     return `${this.position.x}, ${this.position.y}, ${this.getDirectionName(this.direction)}`;
   }
-  getDirectionName(x: number){
-    if(x === 0){
+  getDirectionName(direction: number){
+    if(direction === 0){
       return 'NORTH';
-    }else if(x === 1){
+    }else if(direction === 1){
       return 'EAST';
     }
-    else if(x === 2){
+    else if(direction === 2){
       return 'SOUTH';
     }
-    else if(x === 3){
+    else if(direction === 3){
       return 'WEST';
     }
   }
