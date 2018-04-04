@@ -27,16 +27,6 @@ to roam around the surface of the table, but must be prevented from falling.
 Requirements:
  Node v6 or higher I have tested on Node v9
  
-[AWS LAMBDA CLOUD DEPLOYMENT using Node ServerLess module]
- ```shell
-$ serverless create --template aws-nodejs --path robo-sim-cloud
-
-$ git clone https://github.com/nileshdattatraykedare/nodejs-robo-sim && cp nodejs-robo-sim -r robo-sim-cloud && cd robo-sim-cloud
-
-$ npm install
-
-$ serverless deploy
-```
 Now install packages & dependencies:
 ```shell
 npm install
@@ -75,4 +65,16 @@ Shows Robot cannot move further than table surface
 Shows How robot changes direction
 
 ![Alt text](extra/screen_case3.png "CHANGE DIRECTION in 90 DEGREE")
+
+[AWS LAMBDA CLOUD DEPLOYMENT using Node ServerLess module]
+ ```shell
+ npm install serverless -g
+$ serverless create --template aws-nodejs --path robo-sim-cloud
+
+$ git clone https://github.com/nileshdattatraykedare/nodejs-robo-sim && cp nodejs-robo-sim -r robo-sim-cloud && cd robo-sim-cloud
+
+$ npm install
+
+$ serverless deploy
+```
 
