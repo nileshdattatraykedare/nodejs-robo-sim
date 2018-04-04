@@ -28,16 +28,15 @@ Requirements:
  Node v6 or higher I have tested on Node v9
  
 [AWS LAMBDA CLOUD DEPLOYMENT using Node ServerLess module]
- 
-# 1. Create a new Serverless project:
+ ```shell
 $ serverless create --template aws-nodejs --path robo-sim-cloud
-# 2. copy robo-sim project and Change into the newly created directory
-$ git clone https://github.com/nileshdattatraykedare/nodejs-robo-sim && cp nodejs-robo-sim -r robo-sim-cloud && cd robo-sim-cloud
-# 3. Install npm dependencies
-$ npm install
-# 4. Deploy
-$ serverless deploy
 
+$ git clone https://github.com/nileshdattatraykedare/nodejs-robo-sim && cp nodejs-robo-sim -r robo-sim-cloud && cd robo-sim-cloud
+
+$ npm install
+
+$ serverless deploy
+```
 Now install packages & dependencies:
 ```shell
 npm install
