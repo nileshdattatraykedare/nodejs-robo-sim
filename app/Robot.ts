@@ -81,18 +81,18 @@ export class Robot {
    * @param  {} ${this.position.y}
    */
   public toString() {
-    return `${this.position.x}, ${this.position.y}, ${this.getDirectionName(this.direction)}`;
+    return `${this.position.x}, ${this.position.y}, ${this.getRobotFacingDirection(this.direction)}`;
   }
-  getDirectionName(direction: number){
-    if(direction === 0){
+  getRobotFacingDirection(robotFacing: number){
+    if(robotFacing === 0){
       return 'NORTH';
-    }else if(direction === 1){
+    }else if(robotFacing === 1){
       return 'EAST';
     }
-    else if(direction === 2){
+    else if(robotFacing === 2){
       return 'SOUTH';
     }
-    else if(direction === 3){
+    else if(robotFacing === 3){
       return 'WEST';
     }
   }
