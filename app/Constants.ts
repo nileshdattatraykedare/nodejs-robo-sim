@@ -1,0 +1,3 @@
+const TABLE_DIMENSIONS = {width: 5, height: 5};
+
+export {TABLE_DIMENSIONS as DEFAULT_TABLE_DIMENSIONS};
